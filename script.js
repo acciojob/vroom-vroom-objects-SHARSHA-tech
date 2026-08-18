@@ -5,7 +5,7 @@ function Car(make, model) {
 		this.model=model;
 }
 	getMakeModel(){
-      return this.make +"make model" + this.model;
+      return this.make +" " + this.model;
 		}
 
 
