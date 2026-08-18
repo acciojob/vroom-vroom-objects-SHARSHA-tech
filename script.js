@@ -11,13 +11,16 @@ function Car(make, model) {
 
 
 function SportsCar(make, model, topSpeed) {
- super (make,model);
+Car.call(this,make,model);
 	this.topSpeed=topSpeed;
+}
 	getTopSpeed(){
 		return this.topSpeed
-	}
+	
 }
-SportsCar(1000);
+const myCar = new SportsCar("Ferrari", "F8", 211);
+console.log(myCar.getMakeModel());  
+console.log(myCar.getTopSpeed()); 
 // Do not change the code below
 window.Car = Car;
 window.SportsCar = SportsCar;
